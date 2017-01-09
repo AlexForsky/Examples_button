@@ -62,7 +62,7 @@ NAV
 
 .__nav {
   display: flex;
-  flex-wrap: wrap;
+  /*flex-wrap: wrap;*/
   justify-content: flex-start;
   align-items: center;
   margin: 10px;
@@ -74,10 +74,24 @@ NAV
   padding: 5px 0;
   border: 2px solid #999999;
   border-radius: 3px;
-  margin: 0 1px;
+  margin: 1px;
+  color: #666666;
  }
+ .__nav-item:hover {
+  color: #FFFFFF;
+  border-color: #666666;
+  background-color: #999999;
+ }
+
 
  .__nav-item__link {
   text-decoration: none;
-  color: #666666;
+  
+ }
+
+ @media screen and (max-width: 440px) {
+   .__nav{
+      flex-direction: column;
+   }
+   
  }
