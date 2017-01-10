@@ -4,14 +4,14 @@
 	<meta charset="UTF-8">
 	<title>Document</title>
 	<link rel="stylesheet" type="text/css" href="style.css">
-	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+	
 </head>
 <body>
-	<form class="__form" id="contact" action="php/mail.php" method="post">
+	<form class="__form" id="form">
 		<label for="user_name" class="__form__label">Ваше имя</label>
-		<input id="author" class="__form_input __form_input-name" type="text" name="user_name" placeholder="Ваше имя" required="">
+		<input name="name" class="__form_input __form_input-name" type="text" name="user_name" placeholder="Ваше имя" required="">
 		<label for="user_email" class="__form__label">Ваша электронная почта</label>
-		<input id="email" class="__form_input __form_input-email" type="text" name="user_email" placeholder="Ваша электронная почта" required="">
+		<input name="email" class="__form_input __form_input-email" type="text" name="user_email" placeholder="Ваша электронная почта" required="">
 		<button id="submit" class="__form_button ">Оформить заказ</button>
 	</form>
 
@@ -21,6 +21,7 @@
 		<a href="#" class="__nav-item__link"><div class="__nav-item">Sale</div></a>
 		<a href="#" class="__nav-item__link"><div class="__nav-item">Contact</div></a>
 	</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 <script src="js/form.js"></script>	
 </body>
 </html>

@@ -1,19 +1,13 @@
-jQuery(document).ready(function($) {
-	$("#contact").submit(function() {
-		var str = $(this).serialize();
-		$.ajax({
+$(document).ready(function() {
+	// body...
+	$("#form").submit() {
+		$ajax({
 			type: "POST",
-			url: "/php/mail.php",
-			data: str,
-			success: function(msg) {
-				if(msg == 'OK') {
-					result = '<div class="ok">Сообщение отправлено</div>';
-					$("#fields").hide();
-				}
-				else {result = msg;}
-				$('#note').html(result);
-			}
+			url: "php/mail.php"
+			data: $(this).serialize()
+		}).done(function() {
+			alert("Спасибо за заявку! Мы скоро с вами свяжемся.");
 		});
 		return false;
-	});
+	};
 });
